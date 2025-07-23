@@ -1,0 +1,25 @@
+.grey{
+    background-color: #121212;
+}
+.margin{
+    margin: 10px;
+}
+.flex{
+    display: flex;
+}
+.circular{
+    border-radius: 10px;
+}
+.invert{
+    filter: invert();
+}
+.buttonwhite{
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    border: none;
+}
+
+
+

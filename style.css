@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: roboto;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+.upper li svg{
+    width: 19px;
+}
+.upper ul li{
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    
+}
+.left{
+    flex: 1;
+    display: flex;
+  flex-direction: column;
+  width: 30vw;
+  overflow: hidden;
+  
+    
+
+}
+.left ul{
+    padding-top: 3px;
+    cursor: pointer;
+    
+}
+.left ul li:hover{
+    span{color: white;}
+}
+.left span{
+    
+    
+    color: rgba(255, 255, 255, 0.703);
+}
+
+.right{
+    height: 100%;
+    width: 70vw;
+    overflow: hidden;
+}
+.left .upper{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.container{
+display: flex;
+  height: 100vh;    
+  gap: 10px;
+  overflow: hidden;
+    
+}
+.left .lower{
+    height: 80vh;
+    position: relative;
+}
+.lower .top{
+    justify-content: space-between;
+    padding: 19px;
+    font-size: 10px;
+    align-items: center;
+    color:rgba(255, 255, 255, 0.703);
+}
+.lower .top h2{
+    
+    color:rgba(255, 255, 255, 0.703);
+}
+.lower .top h2{
+    
+    color:rgba(255, 255, 255, 0.703);
+}
+.lower .top h2:hover{
+    color: white;
+    cursor:pointer;
+}
+.imgback{
+    border-radius: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgback:hover{
+    background-color: rgba(206, 201, 201, 0.289);
+
+}
+.lower .mid{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    overflow-y: scroll;
+
+}
+.lower .mid .box{
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+    gap: 10px;
+    margin: 8px;
+}
+.lower .mid .box h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+.lower .mid .box h4{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.lower .mid .box button{
+    font-size: 12px;
+    padding: 6px 10px;
+    width: fit-content;
+    margin-top: 7px;
+}
+.left .lower .mid::-webkit-scrollbar {
+  width: 8px; /* scrollbar width */
+}
+
+.left .lower .mid::-webkit-scrollbar-track {
+  background: transparent; /* optional background */
+}
+
+.left .lower .mid::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* scrollbar color */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.left .lower .mid::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.footer{
+    font-size: 9px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 10px;
+    position: relative;
+    margin-top: 30px;
+}
+.footer span{
+    cursor: pointer;
+}
+.navbar .arrows img{
+    width: 20px;
+    fill: white;
+
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    background-color: #090909;
+    height: 55px;
+}
+.arrows{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+}
+.navbar .imgback{
+    height: 30px;
+    width: 30px;
+}
+.navbuttons :nth-child(1){
+    background-color: #090909;
+    color: #828080;
+    padding: 13px 30px;
+
+}
+.navbuttons :nth-child(2){
+    padding: 13px 30px;
+
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.05);
+    font-weight: bolder
+}
+.navbuttons{
+    margin-right: 5px ;
+}
+.card{
+    flex-direction: column;
+    padding: 13px;
+    width: 160px;
+    cursor: pointer;
+
+}
+.card img{
+
+    object-fit: contain;
+}
+.card .cardtext h3{
+    font-weight: 500;
+    margin:7px 0px;
+}
+.card .cardtext h4{
+    
+    display: -webkit-box;
+  -webkit-line-clamp: 3;              /* Show only 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(108, 106, 106);
+}
+.card:hover{
+    background-color: #202020;
+}
+.cardcontainer{
+    max-height: 65vh;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    width: 67vw;
+    
+
+
+}
+.playlists{
+    margin: 15px;
+}
+.playlists h2{
+    padding-left:10px ;
+    font-size:2px;
+}
+
+.cardcontainer::-webkit-scrollbar {
+  width: 8px; /* scrollbar width */
+}
+
+.cardcontainer::-webkit-scrollbar-track {
+  background: transparent; /* optional background */
+}
+
+.cardcontainer::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* scrollbar color */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cardcontainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
