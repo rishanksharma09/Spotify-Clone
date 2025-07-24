@@ -106,30 +106,53 @@ display: flex;
 
 }
 .lower .mid .box{
-    background-color: #242424;
+        background-color: #242424;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
     gap: 10px;
     margin: 8px;
+    height:70px;
+    overflow:hidden;
 }
-.lower .mid .box h3{
-    font-size: 14px;
-    font-weight: bold;
+.lower .mid .box:hover{
+    cursor: pointer;
+    background-color:#24242469;
 }
-.lower .mid .box h4{
-    font-size: 11px;
-    font-weight: bold;
+.lower .mid .box img{
+    height: 30px;
+}
+.lower .mid .box span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    
+}
+.lower .mid .box .playnow{
+    white-space: nowrap;
+    gap: 8px;
+}
+.lower .mid .box .name{
+    gap:15px;
+    color: white;
+}
+.sname {
+    color: rgb(255, 255, 255);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+
+
 }
 
-.lower .mid .box button{
-    font-size: 12px;
-    padding: 6px 10px;
-    width: fit-content;
-    margin-top: 7px;
-}
+
 .left .lower .mid::-webkit-scrollbar {
   width: 8px; /* scrollbar width */
 }
