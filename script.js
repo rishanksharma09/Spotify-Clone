@@ -84,6 +84,17 @@ async function getMusic() {
 
         }
     }
+    let burger=document.querySelector(".burgermenu");
+    burger.addEventListener("click",()=>{
+        document.querySelector(".left").style.left="2%";
+        document.querySelector(".left").style.width="fit-content";
+        
+
+    })
+    let cross=document.querySelector(".cross");
+    cross.addEventListener("click",()=>{
+        document.querySelector(".left").style.left="-180%";
+    })
 }
 
 

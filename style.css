@@ -225,6 +225,7 @@ button:hover{
 }
 .navbuttons{
     margin-right: 5px ;
+    white-space: nowrap;
 }
 .card{
     flex-direction: column;
@@ -302,6 +303,7 @@ button:hover{
     background-color: #242424;
     display: flex;
     flex-direction: column;
+    z-index: 1000;
 }
 .controls img{
     height: 22px;
@@ -358,4 +360,108 @@ button:hover{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.burgermenu{
+    display: none;
+}
+.cross{
+    display: none;
+}
+@media screen and (max-width:800px) {
+    .left{
+        position: absolute;
+        left:-180%;
+        z-index: 100;
+        transition: all 0.3s ease-in-out;
+    }
+    .right{
+        width: 100vw;
+    }
+    .cardcontainer{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 13px;
+
+    }
+    .card{
+        width: 80%;
+    }
+        .playbar {
+        width: 97vw;
+        left: 1.5vw;
+        right: 1.5vw;
+        bottom: 1.5vw;
+        height: auto;
+        min-height: 90px;
+        border-radius: 0;
+        padding: 10px 0 5px 0;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+    .up {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 0 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .up .songname {
+        max-width: 90vw;
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    .controls {
+        position: static;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        margin: 8px 0;
+        width: 100%;
+    }
+    .controls img {
+        height: 28px;
+    }
+    .seekbar {
+        padding: 10px 0 0 0;
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .seekbar .bar {
+        height: 4px;
+    }
+    .seekbar .dot {
+        height: 12px;
+        width: 12px;
+        bottom: -4px;
+    }
+    .curtime, .totaltime {
+        font-size: 13px;
+        margin: 0 4px;
+    }
+    .left .upper{
+        padding: 10px;
+    }
+    .burgermenu{
+        display: flex;
+        
+    }
+    .burgermenu img{
+        width: 30px;
+        height: 30px;
+    }
+    .cross{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+
+    
 }
