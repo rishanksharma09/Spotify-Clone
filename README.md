@@ -13,7 +13,7 @@ A fully responsive, interactive Spotify UI clone built using **HTML**, **CSS**, 
 ## 🚀 Features
 
 - 🎧 Browse playlists with cover images and artist info.
-- 🗂️ Dynamic playlist and song loading using local folder structure(Title and subtitle of the playlist could be added in a .json file in local folder or server).
+- 🗂️ Dynamic playlist and song loading using local folder structure(Title and subtitle of the playlist could be added in a `.json` file in local folder or server).
 - ▶️ Play/Pause, Next, and Previous controls.
 - 📊 Live seekbar with time updates and drag-to-seek functionality.
 - 📱 Fully responsive layout for desktop and mobile views.
