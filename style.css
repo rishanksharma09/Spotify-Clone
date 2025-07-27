@@ -103,7 +103,16 @@ display: flex;
     flex-direction: column;
     height: 40vh;
     overflow-y: scroll;
+    
 
+}
+.mid .notfound{
+    
+    color: #c5c2c2;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 500;
 }
 .lower .mid .box{
         background-color: #242424;
@@ -272,6 +281,7 @@ button:hover{
 .playlists h2{
     padding-left:10px ;
     font-size:22px;
+    margin-bottom: 10px;
 }
 
 .cardcontainer::-webkit-scrollbar {
@@ -366,6 +376,12 @@ button:hover{
 }
 .cross{
     display: none;
+}
+.selectedcard{
+    background-color:#202020 ;
+}
+.selectedbox{
+    background-color:#24242423 !important;
 }
 @media screen and (max-width:800px) {
     .left{
